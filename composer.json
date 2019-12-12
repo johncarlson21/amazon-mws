@@ -1,12 +1,11 @@
 {
-  "name": "mcs/amazon-mws",
+  "name": "johncarlson21/amazon-mws",
   "description": "Library to interface with Amazon MWS",
   "license": "MIT",
   "keywords": [
     "amazon",
     "mws"
   ],
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Michiel Meertens",
@@ -18,7 +17,7 @@
     "ext-mbstring": "*",
     "ext-json": "*",
     "ext-simplexml": "*",
-    "guzzlehttp/guzzle": "~6.0",
+    "guzzlehttp/guzzle": "dev-master",
     "spatie/array-to-xml": "^2.1",
     "league/csv": "^9",
     "ext-curl": "*"

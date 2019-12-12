@@ -20,7 +20,7 @@ Interaction with the Amazon Api for vendors called MWS
     {
         "name": "mcs/amazon-mws",
         "type": "git",
-        "url": "git@github.com:tiny-software/amazon-mws.git"
+        "url": "git@github.com:johncarlson21/amazon-mws.git"
     }
 ]
 ```
@@ -206,19 +206,6 @@ public function uploadAmazon(string $productType, Product $product, int $product
 $result = $client->updateStock([
     'sku1' => 20,
     'sku2' => 9,
-]);
-print_r($result);
-
-$info = $client->GetFeedSubmissionResult($result['FeedSubmissionId']);
-print_r($info);
-```
-
-### Update product stock with fulfillment latency specified
-
-```php
-$result = $client->updateStockWithFulfillmentLatency([
-    ['sku' => 'sku1', 'quantity' => 20, 'latency' => 1],
-    ['sku' => 'sku2', 'quantity' => 20, 'latency' => 1],
 ]);
 print_r($result);
 
