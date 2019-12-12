@@ -1593,7 +1593,8 @@ class MWSClient
                 'body' => $body,
                 'curl' => [
                     CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2
-                ]
+                ],
+                'allow_redirects' => false
             ];
             ksort($query);
             $query['Signature'] = base64_encode(
