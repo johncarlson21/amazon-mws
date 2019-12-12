@@ -6,7 +6,6 @@
     "amazon",
     "mws"
   ],
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Michiel Meertens",
